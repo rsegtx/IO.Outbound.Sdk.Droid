@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2797728B-A5A9-47D4-804B-6F487CC2A19C}</ProjectGuid>
+    <Description>Xamarin.Android bindings for the Outbound messaging SDK</Description>
+    <PackageId>IO.Outbound.Sdk.Droid</PackageId>
+    <PackageVersion>0.2.8.3</PackageVersion>
+    <Authors>Mark Reynolds</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IO.Outbound.Sdk.Droid</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>IO.Outbound.Sdk.Droid.Nuget.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>0.2.8.1</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
+    <Owners>Reynolds Software Engineering Group, Inc.</Owners>
+    <Title>Outbound Android SDK bindings</Title>
+    <PackageProjectUrl>https://github.com/rsegtx/IO.Outbound.Sdk.Droid</PackageProjectUrl>
+    <Copyright>Copyright © Reynolds Software Engineering Group, Inc.</Copyright>
+    <PackageLicenseUrl>http://www.rseg.net/mit-license</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IO.Outbound.Sdk.Droid\IO.Outbound.Sdk.Droid.csproj">
+      <Project>{C93822D6-601D-4E48-88B5-5EC4284036CC}</Project>
+      <Name>IO.Outbound.Sdk.Droid</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.1.276</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

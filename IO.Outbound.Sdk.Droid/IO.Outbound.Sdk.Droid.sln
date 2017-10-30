@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO.Outbound.Sdk.Droid", "IO.Outbound.Sdk.Droid.csproj", "{C93822D6-601D-4E48-88B5-5EC4284036CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C93822D6-601D-4E48-88B5-5EC4284036CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93822D6-601D-4E48-88B5-5EC4284036CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93822D6-601D-4E48-88B5-5EC4284036CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93822D6-601D-4E48-88B5-5EC4284036CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

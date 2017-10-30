@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='OutboundService' and @extends='android.app.IntentService']" name="extends">mono.android.app.IntentService</attr>
+
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='Outbound']/method[@name='init']/parameter[@name='p0']" name="name">app</attr>
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='Outbound']/method[@name='init']/parameter[@name='p1']" name="name">apiKey</attr>
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='Outbound']/method[@name='init']/parameter[@name='p2']" name="name">gcmSenderId</attr>
+    <attr path="/api/package[@name='io.outbound.sdk']/class[@name='Outbound']/method[@name='identify']/parameter[@name='p0']" name="name">user</attr>
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='Outbound']/method[@name='track']/parameter[@name='p0']" name="name">event</attr>
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='Outbound']/method[@name='pairDevice']/parameter[@name='p0']" name="name">pin</attr>
+
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='OutboundPushReceiver']/method[@name='onReceiveIntent']/parameter[@name='p0']" name="name">context</attr>
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='OutboundPushReceiver']/method[@name='onReceiveIntent']/parameter[@name='p1']" name="name">intent</attr>
+
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='OutboundService']/method[@name='onDisplayNotification']/parameter[@name='p0']" name="name">notif</attr>
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='OutboundService']/method[@name='onOpenNotification']/parameter[@name='p0']" name="name">notif</attr>
+	<attr path="/api/package[@name='io.outbound.sdk']/class[@name='OutboundService']/method[@name='onReceiveNotification']/parameter[@name='p0']" name="name">notif</attr>
+
+</metadata>
