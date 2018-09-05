@@ -7,3 +7,5 @@ that simplify adding robust messaging to your mobile apps.
 You can find details about use of the Android SDK on Zendesk's website:
 
 https://developer.zendesk.com/embeddables/docs/outbound/android
+
+This project is no longer supported as Zendesk has elminated their free developer accounts.
