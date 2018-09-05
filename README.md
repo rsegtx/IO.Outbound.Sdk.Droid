@@ -7,7 +7,3 @@ that simplify adding robust messaging to your mobile apps.
 You can find details about use of the Android SDK on Zendesk's website:
 
 https://developer.zendesk.com/embeddables/docs/outbound/android
-
-A NuGet package is also available:
-
-https://www.nuget.org/packages/IO.Outbound.Sdk.Droid
